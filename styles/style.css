@@ -3,30 +3,71 @@
 	font-family: "Roboto", sans-serif;
 	
 }
+body{
+	background-color: #f7f7f7;
+}
+section {
+    padding: 20px;
+}
 h1{
 	font-family: "Nunito Sans", sans-serif;
 }
 h2{
 	font-family: "Oswald", sans-serif;
 }
+/* Ajustar el margen inferior de los elementos de la lista */
+li, nav {
+    margin-bottom: 15px; 
+}
+/* Flexbox para el contenedor de experiencia */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas si es necesario */
+    justify-content: space-between; /* Espacia los elementos equitativamente */
+}
+
+.flex-container > div {
+    flex: 1; /* Todos los divs tomarán un espacio igual */
+    margin: 10px; /* Espacio alrededor de cada caja */
+    min-width: 250px; /* Mínimo ancho para cada caja */
+}
+
+.table-container {
+    width: 90%; /* Asegurar que el contenedor sea lo suficientemente ancho */
+    margin: 0 auto; /* Centrar el contenedor */
+    padding: 20px; /* Agregar padding alrededor de la tabla */
+}
+
 table {
-  margin: 2px 1px 1.5px;
-  margin-top: 0.8rem;
-  border: 0.2pt dashed #827d7d;
-  padding: 2% 1.2%;  
-  box-shadow: 
-   rgba(0, 0, 0, 0.25) 0px 54px 55px, 
-   rgba(0, 0, 0, 0.12) 0px -12px 30px, 
-   rgba(0, 0, 0, 0.12) 0px 4px 6px,
-   rgba(0, 0, 0, 0.17) 0px 12px 13px, 
-   rgba(0, 0, 0, 0.09) 0px -3px 5px;   
+    width: 100%; /* Asegurar que la tabla ocupe todo el ancho del contenedor */
+    border: 0.2pt dashed #827d7d;
+    padding: 2% 1.2%;
+    box-shadow:
+        rgba(0, 0, 0, 0.15) 0px 10px 20px, /* Hacer la sombra más sutil */
+        rgba(0, 0, 0, 0.1) 0px -10px 30px,
+        rgba(0, 0, 0, 0.1) 0px 4px 6px,
+        rgba(0, 0, 0, 0.1) 0px 12px 13px,
+        rgba(0, 0, 0, 0.05) 0px -3px 5px;
 }
+
+
 #educacion, #experiencia, #proyectos, #habilidades, #intereses, #contacto{
-	background-color: #8bd3dd;
-}
-.contenido > #educacion, #experiencia, #proyectos, #habilidades, #intereses, #contacto{
+	background-color: #e0f7fa;
 	color: #172c66;
 }
+#experiencia div {
+    margin-bottom: 10px; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    background-color: #f9f9f9;
+}
+#proyectos div {
+    margin-bottom: 10px; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    background-color: #f9f9f9; 
+}
+
 // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 200 to 700
 
@@ -119,4 +160,34 @@ table {
   font-variation-settings:
     "wdth" 100,
     "YTLC" 500;
+}
+
+.table-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border: 0.2pt dashed #827d7d;
+    padding: 2% 1.2%;
+    box-shadow:
+        rgba(0, 0, 0, 0.15) 0px 10px 20px,
+        rgba(0, 0, 0, 0.1) 0px -10px 30px,
+        rgba(0, 0, 0, 0.1) 0px 4px 6px,
+        rgba(0, 0, 0, 0.1) 0px 12px 13px,
+        rgba(0, 0, 0, 0.05) 0px -3px 5px;
+    background-color: #e0f7ea; /* Fondo verde claro */
+    color: #004d40; /* Texto verde oscuro */
+}
+
+table th {
+    background-color: #a5d6a7; /* Fondo de los encabezados */
+    color: #1b5e20; /* Color de texto de los encabezados */
+}
+
+table td {
+    background-color: #e8f5e9; /* Fondo de las celdas */
+    color: #004d40; /* Color de texto de las celdas */
 }
